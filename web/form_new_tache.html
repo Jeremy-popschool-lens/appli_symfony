@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Appli 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Taches en cours</a>
+        <a class="navbar-brand" href="#">Taches finalisé</a>
+      </div>
+    </div>
+  </nav>
+  <form>
+    <div class="container">
+      <div class="form-group">
+        <label for="name">Nom :</label>
+        <input type="name" class="form-control" id="name">
+      </div>
+      <div class="form-group">
+        <label for="email">Adresse Email :</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <label for="name">Intitulé de la tache</label>
+        <input type="text" class="form-control" id="name-tache">
+      </div>
+      <div class="form-group">
+        <label for="name">Détails de la tache</label>
+        <input type="text" class="form-control" id="detail-tache">
+      </div>
+      <div class="form-group">
+        <label for="name">Date de réalisation</label>
+        <input type="date" name="date" class="form-control" id="date-tache">
+      </div>
+      <div class="form-group">
+        <label for="name">Code de priorité</label>
+        <input type="number" name="number" class="form-control" id="priority-tache">
+      </div>
+      <button type="submit" class="btn btn-default">Envoyer</button>
+    </div>
+  </form>
+</body>
+</html>
