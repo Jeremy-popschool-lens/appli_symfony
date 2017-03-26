@@ -40,9 +40,12 @@ class Degres
     /**
     * @var ArrayCollection
     *
-    * @ORM\OneToMany(targetEntity="Taches", mappedBy="degres")
+    * @ORM\OneToMany(targetEntity="Tache", mappedBy="degres")
     */
-     private $taches;    public function __construct() {
+     private $taches;
+
+     public function __construct() {
+
      $this->taches = new ArrayCollection();
    }
 

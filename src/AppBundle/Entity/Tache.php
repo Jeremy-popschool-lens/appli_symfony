@@ -9,12 +9,12 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
- * taches
+ * Tache
  *
- * @ORM\Table(name="taches")
+ * @ORM\Table(name="tache")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\tachesRepository")
  */
-class Taches
+class Tache
 {
     /**
      * @var int
@@ -64,7 +64,7 @@ class Taches
        * @var Degres
        *
        * @Assert\NotBlank()
-       * @ORM\ManyToOne(targetEntity="Degres", inversedBy="taches")
+       * @ORM\ManyToOne(targetEntity="Degres", inversedBy="Tache")
        * @ORM\JoinColumn(name="Degres", referencedColumnName="id")
        */
    private $degres;
@@ -85,7 +85,7 @@ class Taches
      *
      * @param string $nom
      *
-     * @return taches
+     * @return Tache
      */
     public function setNom($nom)
     {
@@ -109,7 +109,7 @@ class Taches
      *
      * @param string $details
      *
-     * @return taches
+     * @return tache
      */
     public function setDetails($details)
     {
@@ -133,7 +133,7 @@ class Taches
      *
      * @param \DateTime $dateLimite
      *
-     * @return taches
+     * @return tache
      */
     public function setDateLimite($dateLimite)
     {
@@ -157,7 +157,7 @@ class Taches
      *
      * @param integer $degres
      *
-     * @return taches
+     * @return tache
      */
     public function setDegres($degres)
     {
@@ -181,7 +181,7 @@ class Taches
      *
      * @param boolean $valider
      *
-     * @return taches
+     * @return tache
      */
     public function setValider($valider)
     {
